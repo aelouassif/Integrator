@@ -19,7 +19,7 @@ public class LoginContoller {
 
     @RequestMapping("/login")
     public ModelAndView login(@RequestParam(value="login") String login, @RequestParam(value="password") String password) {
-        Users user = this.restTemplate.getForObject("http://localhost:9595/login?login="+login+"&password="+password, Users.class);
+        Users user = this.restTemplate.getForObject("http://localhost:9090/login?login="+login+"&password="+password, Users.class);
         System.out.println("----------------------------------------------");
 
         ModelAndView mv = new ModelAndView();
