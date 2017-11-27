@@ -28,7 +28,7 @@ public class Application {
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return args -> {
 			Users user = restTemplate.getForObject(
-					"http://localhost:9090/login?login=abdellah&password=elouassif", Users.class);
+					"http://localhost:9595/login?login=abdellah&password=elouassif", Users.class);
 			log.info(user.toString());
 		};
 	}
