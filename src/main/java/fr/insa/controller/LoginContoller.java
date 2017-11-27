@@ -32,6 +32,18 @@ public class LoginContoller {
         return mv;
     }
 
+    @RequestMapping("/inscription")
+    public ModelAndView inscription(@RequestParam(value="login") String login, @RequestParam(value="password") String password) {
+        Users user = this.restTemplate.getForObject("http://localhost:9090/insert?login="+login+"&password="+password, Users.class);
+        System.out.println("----------------------------------------------");
+
+        ModelAndView mv = new ModelAndView();
+
+        mv.setViewName("index.html");
+
+        return mv;
+    }
+
     public LoginContoller(RestTemplateBuilder restTemplateBuilder){
         this.restTemplate = restTemplateBuilder.build();
     }
