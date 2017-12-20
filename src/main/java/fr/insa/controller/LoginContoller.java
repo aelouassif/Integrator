@@ -16,10 +16,10 @@ import javax.validation.constraints.Null;
 @Controller
 public class LoginContoller {
     private final RestTemplate restTemplate;
-
+    private String url = "http://testinteg.herokuapp.com/";
     @RequestMapping("/login")
     public ModelAndView login(@RequestParam(value="login") String login, @RequestParam(value="password") String password) {
-        Users user = this.restTemplate.getForObject("http://localhost:9090/login?login="+login+"&password="+password, Users.class);
+        Users user = this.restTemplate.getForObject(url+"login?login="+login+"&password="+password, Users.class);
         System.out.println("----------------------------------------------");
 
         ModelAndView mv = new ModelAndView();
@@ -34,7 +34,7 @@ public class LoginContoller {
 
     @RequestMapping("/inscription")
     public ModelAndView inscription(@RequestParam(value="login") String login, @RequestParam(value="password") String password) {
-        Users user = this.restTemplate.getForObject("http://localhost:9090/insert?login="+login+"&password="+password, Users.class);
+        Users user = this.restTemplate.getForObject(url+"insert?login="+login+"&password="+password, Users.class);
         System.out.println("----------------------------------------------");
 
         ModelAndView mv = new ModelAndView();
