@@ -24,12 +24,4 @@ public class Application {
 		return builder.build();
 	}
 
-	@Bean
-	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
-		return args -> {
-			Users user = restTemplate.getForObject(
-					"http://localhost:9090/login?login=abdellah&password=elouassif", Users.class);
-			log.info(user.toString());
-		};
-	}
 }
