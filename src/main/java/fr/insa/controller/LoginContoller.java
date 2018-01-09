@@ -16,7 +16,7 @@ import javax.validation.constraints.Null;
 @Controller
 public class LoginContoller {
     private final RestTemplate restTemplate;
-    private String url = "http://testinteg.herokuapp.com/";
+    private String url = "http://integratordatabase.herokuapp.com/";
     @RequestMapping("/login")
     public ModelAndView login(@RequestParam(value="login") String login, @RequestParam(value="password") String password) {
         Users user = this.restTemplate.getForObject(url+"login?login="+login+"&password="+password, Users.class);
