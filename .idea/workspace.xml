@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c516864a-07b9-4efa-b294-9cc269e2c7a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/insa/controller/LoginContoller.java" afterPath="$PROJECT_DIR$/src/main/java/fr/insa/controller/LoginContoller.java" />
-    </list>
+    <list default="true" id="c516864a-07b9-4efa-b294-9cc269e2c7a1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +49,7 @@
       <file leaf-file-name="LoginContoller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/controller/LoginContoller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="360">
               <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -531,12 +529,12 @@
       <workItem from="1513773190841" duration="3830000" />
       <workItem from="1513786060927" duration="5000" />
       <workItem from="1514487235631" duration="174000" />
-      <workItem from="1515529950037" duration="651000" />
+      <workItem from="1515529950037" duration="2279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40941000" />
+    <option name="totallyTimeSpent" value="42569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -780,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/controller/LoginContoller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="360">
           <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
