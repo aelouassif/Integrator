@@ -1,6 +1,7 @@
 package fr.insa.controller;
 
 import fr.insa.model.Users;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
@@ -11,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.constraints.Null;
+import java.util.Map;
 
 @RestController
 @Controller
@@ -42,6 +44,14 @@ public class LoginContoller {
         mv.setViewName("index.html");
 
         return mv;
+    }
+    @Value("${welcome.message:test}")
+    private String message = "Hello World";
+
+    @RequestMapping("/qlq")
+    public String welcome(Map<String, Object> model) {
+        model.put("message", this.message);
+        return "welcome";
     }
 
     public LoginContoller(RestTemplateBuilder restTemplateBuilder){

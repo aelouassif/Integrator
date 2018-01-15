@@ -1,0 +1,15 @@
+.main_bloc {
+	padding-left: 10%;
+	padding-bottom: 20%;
+	padding-right: 20%;	
+	background-image: url('../images/wallpaper.jpg');
+	background-repeat: none;
+	background-position: center;
+	color: white;
+}
+
+.connect_bloc {
+	padding-top: 5%;
+	margin-bottom: 20%;
+	text-align: right;
+}
