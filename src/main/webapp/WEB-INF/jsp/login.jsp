@@ -17,6 +17,16 @@
 				<a class="btn-floating tooltipped modal-trigger btn-large" data-position="bottom" data-delay="50" data-tooltip="Sign-up" href="#signup"><i class="material-icons large">input</i></a>
 			</div>
 			
+			<c:if test="error == 1">
+				<div class="row">
+					<div class="col s6">
+						<div class="card-panel red lighten-2 white-text">
+							Login or password don't match with our database
+						</div>
+					</div>
+				</div>
+			</c:if>
+			
 			<h1>Seafarer helper</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in commodo mi. Morbi faucibus, ex ac porttitor vehicula, tellus leo aliquam lacus, sed pellentesque nisi sapien et augue. Morbi aliquet dictum nulla eu finibus. Morbi convallis eleifend nibh, porta dictum ipsum suscipit at. Aliquam dictum urna sit amet dapibus ultrices. Morbi a leo id dolor euismod sagittis vel at quam. Nulla vel velit blandit sapien maximus porttitor a ac mi. Curabitur mauris ligula, congue vel vulputate et, fermentum pretium neque. Etiam placerat vestibulum egestas. Sed aliquam justo luctus convallis dictum. 
