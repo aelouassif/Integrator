@@ -1,4 +1,4 @@
-//package fr.insa.model;
+package fr.insa.model;//package fr.fr.insa.model;
 //
 //import org.springframework.boot.SpringApplication;
 //import org.springframework.boot.autoconfigure.SpringBootApplication;
