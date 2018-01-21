@@ -13,6 +13,28 @@ public class Users{
     private String last_name;
     private String email;
 
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+    public Users( String login, String password, String first_name, String last_name, String email) {
+        this.login = login;
+        this.password = password;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+    }
+    public Users(){
+
+    }
     public String getFirst_name() {
         return first_name;
     }
@@ -60,15 +82,4 @@ public class Users{
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "Users{" +
-                "id=" + id +
-                ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                ", first_name='" + first_name + '\'' +
-                ", last_name='" + last_name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
 }

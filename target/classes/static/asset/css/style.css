@@ -5,11 +5,116 @@
 	background-image: url('../images/wallpaper.jpg');
 	background-repeat: none;
 	background-position: center;
+	background-size: cover;
 	color: white;
+	height: 100%;
 }
 
 .connect_bloc {
 	padding-top: 5%;
 	margin-bottom: 20%;
 	text-align: right;
+}
+
+.navbar {
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: 998;
+}
+
+.dashboard-base {
+	width: 100%;
+	padding-top: 80px;
+}
+
+.dashboard-base2 {
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+}
+
+.right-top {
+	float: right;
+	
+}
+
+.row {
+	margin: 0;
+}
+
+.write-wave {
+	padding-top: 20px;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media screen and (max-width: 600px)  {
+	.navbar-bloc {
+		display: none;
+	}
+	
+	.right-navbar {
+		display: none;
+	}
+	
+}
+
+@media screen and (min-width: 600px)  {
+	.navbar-bloc {
+		padding-left: 40px;
+		padding-right: 20px;
+		color: white;
+	}
+	
+	.right-navbar {
+		right: 20px;
+		margin-left: auto;
+		margin-right: 20px;
+	}
+	
+	.sidenav-btn {
+		display: none;
+	}
+}
+
+.navbar-bloc a {
+	color: white;
+}
+
+.profile-bloc {
+	z-index: 997;
+	position: fixed;
+	right: 0;
+	top: 0;
+	margin-left: auto;
+	width: 300px;
+	height: auto;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	transform: translate(0, -100%);
+	transition: all 200ms ease-in-out;
+}
+
+.navigation-bloc {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top : 50px;
+	z-index: 10;
+	text-align: center;
+}
+
+textarea.materialize-textarea{
+	height: 1rem;
+}
+
+.signature {
+	font-size: 0.8em;
+	font-style: italic;
 }

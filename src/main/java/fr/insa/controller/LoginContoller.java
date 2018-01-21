@@ -38,13 +38,17 @@ public class LoginContoller {
     @RequestMapping("/register")
     public ModelAndView inscription(@RequestParam(value="login") String login, @RequestParam(value="password") String password,@RequestParam(value="first_name") String first_name,
         @RequestParam(value="last_name") String last_name,@RequestParam(value="email") String email) {
-        Users user = this.restTemplate.getForObject(url+"insert?login="+login+"&password="+password+"&email="+email+
-                "&first_name="+first_name+"&last_name="+last_name, Users.class);
+
+        System.out.println(url+"insertUser?login="+login+"&password="+password+"&email="+email+
+                "&first_name="+first_name+"&last_name="+last_name+"&email="+email);
+
+        Users user = this.restTemplate.getForObject(url+"insertUser?login="+login+"&password="+password+"&email="+email+
+                "&first_name="+first_name+"&last_name="+last_name+"&email="+email, Users.class);
         System.out.println("----------------------------------------------");
 
-        ModelAndView mv = new ModelAndView();
 
-        mv.setViewName("index");
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("login");
 
         return mv;
     }
